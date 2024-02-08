@@ -2,9 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerButton {
+  color: black;
+  background-color: white;
+}
+
+.logo {
+  height: 1.2rem;
+}
+
+.AppBar {
+  background-color: white !important;
+  padding-top: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
