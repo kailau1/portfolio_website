@@ -1,0 +1,39 @@
+.bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+     overflow: hidden; 
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Approach_Mono', sans-serif;
+}
+
+@font-face {
+    font-family: 'Approach_Mono';
+    src: local('Approach_Mono'), url('../fonts/Approach_Mono/Approach_Mono.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.productText {
+    color: white;
+    text-align: center; 
+    
+}

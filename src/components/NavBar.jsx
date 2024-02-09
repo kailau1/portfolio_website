@@ -1,23 +1,20 @@
 import React from 'react';
-import { AppBar, Toolbar, Button } from "@mui/material";
+import { Container, Toolbar, Button } from "@mui/material";
 import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
     return (
-        <AppBar className="AppBar" position='static'>
-            <Toolbar style={{ justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <img className="logo" src="/images/wad_black.png" href="" aria-label="logo" alt="logo" />
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Button component={Link} to="/" style={{ color: 'black', fontSize: '1.2rem' }}>Home</Button>
-                    <Button component={Link} to="/" style={{ color: 'black', fontSize: '1.2rem' }}>Portfolio</Button>
-                    <Button component={Link} to="/" style={{ color: 'black', fontSize: '1.2rem' }}>Shop</Button>
-                    <Button component={Link} to="/" style={{ color: 'black', fontSize: '1.2rem' }}>Contact</Button>
-                </div>
-                <div></div> 
-            </Toolbar>
-        </AppBar>
+        <Container style={{paddingTop: '4%'}}>
+                <Toolbar style={{ justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button component={Link} to="/" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline'  }}>Home</Button>
+                        <Button component={Link} to="/portfolio" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline'  }}>Portfolio</Button>
+                        <Button component={Link} to="/shop" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline' }}>Shop</Button>
+                        <Button component={Link} to="/contact" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline' }}>Contact</Button>
+                    </div>
+                    <div></div> 
+                </Toolbar>
+            </Container>
     );
 };
 
