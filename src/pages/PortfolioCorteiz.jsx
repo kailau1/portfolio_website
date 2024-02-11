@@ -4,19 +4,18 @@ import { Container, Toolbar, Button, ImageList, ImageListItem } from "@mui/mater
 
 // Array of image data with paths
 const itemData = [
-    { img: '/images/portfolio/corteiz/IMG_6829.jpeg', title: 'IMG_6829' },
-    { img: '/images/portfolio/corteiz/IMG_6838.jpeg', title: 'IMG_6838' },
-    { img: '/images/portfolio/corteiz/IMG_6850.jpeg', title: 'IMG_6850' },
-    { img: '/images/portfolio/corteiz/IMG_6852.jpeg', title: 'IMG_6852' },
-    { img: '/images/portfolio/corteiz/IMG_6866.jpeg', title: 'IMG_6866' },
-    { img: '/images/portfolio/corteiz/IMG_6913.jpeg', title: 'IMG_6913' },
-    { img: '/images/portfolio/corteiz/IMG_6915.jpeg', title: 'IMG_6915' },
-    { img: '/images/portfolio/corteiz/IMG_6919.jpeg', title: 'IMG_6919' },
-    { img: '/images/portfolio/corteiz/IMG_6926.jpeg', title: 'IMG_6926' },
-    { img: '/images/portfolio/corteiz/IMG_6928.jpeg', title: 'IMG_6928' },
-    { img: '/images/portfolio/corteiz/IMG_6934.jpeg', title: 'IMG_6934' },
-    { img: '/images/portfolio/corteiz/IMG_6935.jpeg', title: 'IMG_6935' },
-    { img: '/images/portfolio/corteiz/IMG_6939.jpeg', title: 'IMG_6939' },
+    { img: '/images/portfolio/corteiz/1.jpg', title: '1.' },
+    { img: '/images/portfolio/corteiz/2.jpeg', title: '2.' },
+    { img: '/images/portfolio/corteiz/3.jpeg', title: '3' },
+    { img: '/images/portfolio/corteiz/4.jpeg', title: '4' },
+    { img: '/images/portfolio/corteiz/5.jpeg', title: '5' },
+    { img: '/images/portfolio/corteiz/6.jpeg', title: '6' },
+    { img: '/images/portfolio/corteiz/7.jpeg', title: '7' },
+    { img: '/images/portfolio/corteiz/8.jpeg', title: '8' },
+    { img: '/images/portfolio/corteiz/9.jpeg', title: '9' },
+    { img: '/images/portfolio/corteiz/10.jpeg', title: '10' },
+    { img: '/images/portfolio/corteiz/11.jpeg', title: '11' },
+    { img: '/images/portfolio/corteiz/12.jpeg', title: '12' },
   ];
   
 
