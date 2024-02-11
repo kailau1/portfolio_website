@@ -1,6 +1,8 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBarMain';
 import { Container, Typography } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 
 import '../assets/css/Shop.css';
 
@@ -17,9 +19,10 @@ const Shop = () => {
                 alignItems: 'center', 
                 justifyContent: 'center', 
                 minHeight: '100vh',
-                paddingTop: '1%' 
-            }}>
-                <img className="product1" src="/images/product1.jpg" alt="Book Product" />
+                paddingTop: '1%',
+                textDecoration: 'none' 
+            }} component={Link} to="/IN_COLD_BLOOD">
+                <img className="product1" src="/images/product/product1.jpg" alt="Book Product" />
                 <Typography className="productText" variant="h5" style={{fontFamily: 'Approach_Mono', paddingTop: '1%'}}>
                     IN COLD BLOOD
                 </Typography>
