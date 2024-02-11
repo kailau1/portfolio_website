@@ -2,18 +2,26 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
+import PortfolioMain from './pages/PortfolioMain';
+import PortfolioCorteiz from './pages/PortfolioCorteiz';
+import PortfolioPalestine from './pages/PortfolioPalestine';
+import PortfolioPeople from './pages/PortfolioPeople';
 import Shop from './pages/Shop';
 import Contact from './pages/Contact';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio_main" element={<PortfolioMain />} />
+          <Route path="/portfolio_people" element={<PortfolioPeople />} />
+          <Route path="/portfolio_events"element={<PortfolioCorteiz />} />
+          <Route path="/portfolio_protest" element={<PortfolioPalestine />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/IN_COLD_BLOOD" element={<ProductDetail />} />
         </Routes>
     </Router>
   );

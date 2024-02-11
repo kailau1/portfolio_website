@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Approach_Mono';
+    src: local('Approach_Mono'), url('../fonts/Approach_Mono/Approach_Mono.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.container {
+    color: white;
+    display: flex;
+}
+
+.text {
+  font-family: 'Approach_Mono';
+}

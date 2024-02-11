@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBarMain';
 import { Container, Typography } from "@mui/material";
 
 import '../assets/css/Contact.css'
