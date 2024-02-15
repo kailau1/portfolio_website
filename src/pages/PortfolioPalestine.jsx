@@ -61,7 +61,7 @@ const itemData = [
       <div className="bg">
         <NavBar />
         <Container>
-          <video autoPlay loop muted src="/images/portfolio/main/IMG_3992.mp4" type="video/mp4" />
+          <video autoPlay loop muted playsInline src="/images/portfolio/main/IMG_3992.mp4" type="video/mp4" />
         </Container>
         <Container style={{ padding: '10px' }}>
           <div className="grid-container" style={{
