@@ -15,13 +15,22 @@
     position: relative;
     width: 100%;
     min-height: 100vh; 
-     overflow: hidden; 
+    overflow: hidden; 
 }
-html,
-body {
+
+html, body {
     height: 100%;
     margin: 0;
     font-family: 'Approach_Mono', sans-serif;
+}
+
+.productContainer {
+    display: 'flex';
+    flex-direction: 'column';
+    align-items: 'center';
+    min-height: '100vh';
+    padding-top: '1%';
+    text-decoration: 'none';
 }
 
 @font-face {
@@ -29,11 +38,34 @@ body {
     src: local('Approach_Mono'), url('../fonts/Approach_Mono/Approach_Mono.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
 
 .productText {
     color: white;
     text-align: center; 
-    
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablets and smaller devices */
+    .product1 {
+        width: 100%; /* Adjust the size of the image */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .productText {
+        font-size: 0.8rem; /* Adjust text size */
+    }
+
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    .product1 {
+        width: 90%; /* Adjust the size of the image for mobile screens */
+    }
+
+    .productText {
+        font-size: 0.7rem; /* Further reduce text size for mobile */
+    }
+
+    /* Additional mobile-specific adjustments can be added here */
 }

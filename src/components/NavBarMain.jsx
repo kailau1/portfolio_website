@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Toolbar, Button } from "@mui/material";
 import { Link } from 'react-router-dom';
+import '../assets/css/NavBar.css'; 
 
 export const NavBar = () => {
     return (

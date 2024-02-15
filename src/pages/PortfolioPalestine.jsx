@@ -69,7 +69,6 @@ const itemData = [
         <Container style={{ padding: '10px' }}>
           <div className="grid-container" style={{
             display: 'grid',
-            // Increase the minimum size to 150px (or any size you want) to make images larger
             gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', 
             gridAutoRows: 'auto',
             gridGap: '10px',
@@ -82,7 +81,6 @@ const itemData = [
                   src={item.img}
                   alt={item.title}
                   style={{ width: '100%', height: 'auto' }}
-                  loading="lazy"
                 />
               </div>
             ))}

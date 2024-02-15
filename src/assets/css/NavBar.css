@@ -1,0 +1,24 @@
+.button {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Approach_Mono';
+    text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+    .button {
+        font-size: 0.9rem;
+    }
+}
+
+.portfolioButton {
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Approach_Mono';
+}
+
+@media (max-width: 380px) {
+    .portfolioButton {
+        font-size: 0.7rem;
+    }
+}

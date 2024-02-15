@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import './assets/css/NavBar.css'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import PortfolioMain from './pages/PortfolioMain';
 import PortfolioCorteiz from './pages/PortfolioCorteiz';
 import PortfolioPalestine from './pages/PortfolioPalestine';
 import PortfolioPeople from './pages/PortfolioPeople';
+import AdminHome from './admin/AdminHome';
+import AddProduct from './admin/AddProduct';
 import Shop from './pages/Shop';
 import Contact from './pages/Contact';
 import ProductDetail from './pages/ProductDetail';
@@ -22,6 +25,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/IN_COLD_BLOOD" element={<ProductDetail />} />
+          <Route path="/htrapzyweaintdun/" element={<AdminHome />} />
+          <Route path="/htrapzyweaintdun/add_product" element={<AddProduct />} />
         </Routes>
     </Router>
   );

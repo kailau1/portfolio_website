@@ -13,14 +13,13 @@ const Shop = () => {
                 <source src="/images/main_background.mp4" type="video/mp4" />
             </video>
             <NavBar />
-            <Container style={{
+            <Container className = "productContainer" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center', 
-                justifyContent: 'center', 
                 minHeight: '100vh',
-                paddingTop: '1%',
-                textDecoration: 'none' 
+                paddingTop: '5%',
+                textDecoration: 'none',  
             }} component={Link} to="/IN_COLD_BLOOD">
                 <img className="product1" src="/images/product/product1.jpg" alt="Book Product" />
                 <Typography className="productText" variant="h5" style={{fontFamily: 'Approach_Mono', paddingTop: '1%'}}>
