@@ -7,7 +7,7 @@ import { Container, Toolbar, Button } from "@mui/material";
 const PortfolioMain = () => {
     return(
         <div className="bg">
-            <video autoPlay loop muted>
+            <video autoPlay loop muted playsInline >
                 <source src="/images/main_background.mp4" type="video/mp4" />
             </video>
             <NavBar />

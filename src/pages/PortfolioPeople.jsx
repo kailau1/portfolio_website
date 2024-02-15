@@ -46,10 +46,7 @@ const itemData = [
 
 const Portfolio = () => {
     return (
-        <div className="bg">
-          <video autoPlay loop muted>
-            <source src="/images/main_background.mp4" type="video/mp4" />
-          </video>
+        <div className="bg" playsInline >
           <NavBar />
           <Container>
             <video autoPlay loop muted src="/images/portfolio/main/IMG_3992.mp4" type="video/mp4" />

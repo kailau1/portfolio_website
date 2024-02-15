@@ -9,7 +9,7 @@ import '../assets/css/ProductDetail.css';
 const ProductDetail = () => {
     return(
         <div className="bg">
-            <video autoPlay loop muted>
+            <video autoPlay loop muted playsInline >
                 <source src="/images/main_background.mp4" type="video/mp4" />
             </video>
             <NavBar />
@@ -19,7 +19,6 @@ const ProductDetail = () => {
                         <ProductImageGallery />
                     </Grid>
                     <Grid item xs={12} md={6} style={{ display: 'flex', flexDirection: 'column', paddingTop: '6%' }}>
-                        {/* Wrap Typography in a Box */}
                         <Box>
                             <Typography variant="h4" className='text' sx={{paddingTop: '2%', fontFamily: 'Approach_Mono'}}>
                                 IN COLD BLOOD
