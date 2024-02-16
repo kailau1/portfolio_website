@@ -1,13 +1,29 @@
-.button {
-    color: white;
-    font-size: 1.2rem;
+@font-face {
     font-family: 'Approach_Mono';
-    text-decoration: underline;
+    src: local('Approach_Mono'), url('../fonts/Approach_Mono/Approach_Mono.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+.navButton {
+    color: white;
+    padding: 1% 1%;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: 'Approach_Mono', sans-serif;
+    margin: 0 1%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
 @media (max-width: 380px) {
-    .button {
+    .navButton {
         font-size: 0.9rem;
+        padding: 8px 12px;
     }
 }
 
@@ -16,6 +32,7 @@
     font-size: 0.8rem;
     font-family: 'Approach_Mono';
 }
+
 
 @media (max-width: 380px) {
     .portfolioButton {

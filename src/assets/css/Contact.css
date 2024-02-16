@@ -9,3 +9,36 @@
     color: white;
     padding-top: 2%;
 }
+
+.bg {
+    background-image: url('../../../public/images/main_background.gif');
+  
+    background-size: cover;
+  
+    background-attachment: fixed;
+  
+    background-repeat: no-repeat;
+  
+    background-position: center;
+  
+    min-height: 100vh;
+  
+    background-color: #000;
+  }
+  
+  .contactText {
+    color: white;
+  
+    padding: 1rem;
+  
+  }
+  
+  .Container {
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 1200px;
+    margin: 0 auto; 
+  }

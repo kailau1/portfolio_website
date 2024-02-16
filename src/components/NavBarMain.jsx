@@ -1,21 +1,20 @@
 import React from 'react';
-import { Container, Toolbar, Button } from "@mui/material";
+import { Container, Toolbar } from "@mui/material";
 import { Link } from 'react-router-dom';
 import '../assets/css/NavBar.css'; 
 
 export const NavBar = () => {
     return (
-        <Container style={{paddingTop: '4%'}}>
-                <Toolbar style={{ justifyContent: 'center', borderBottom: '1px solid white' }}>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button component={Link} to="/" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline'  }}>Home</Button>
-                        <Button component={Link} to="/portfolio_main" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline'  }}>Portfolio</Button>
-                        <Button component={Link} to="/shop" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline' }}>Shop</Button>
-                        <Button component={Link} to="/contact" style={{ color: 'white', fontSize: '1.2rem', fontFamily: 'Approach_Mono', textDecoration: 'underline' }}>Contact</Button>
-                    </div>
-                    <div></div> 
-                </Toolbar>
-            </Container>
+        <Container style={{ paddingTop: '4%' }}>
+            <Toolbar style={{ justifyContent: 'center', borderBottom: '1px solid white' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Link to="/" className="navButton">HOME</Link>
+                    <Link to="/portfolio_main" className="navButton">PORTFOLIO</Link>
+                    <Link to="/shop" className="navButton">SHOP</Link>
+                    <Link to="/contact" className="navButton">CONTACT</Link>
+                </div>
+            </Toolbar>
+        </Container>
     );
 };
 

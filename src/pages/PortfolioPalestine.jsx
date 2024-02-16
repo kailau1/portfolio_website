@@ -1,8 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBarPortfolio';
-import { Container, Toolbar, Button, ImageList, ImageListItem } from "@mui/material";
+import { Container} from "@mui/material";
 
-// Array of image data with paths
 const itemData = [
     { img: '/images/portfolio/palestine/1.JPG', title: '1.' },
     { img: '/images/portfolio/palestine/2.JPG', title: '2.' },
@@ -60,9 +59,6 @@ const itemData = [
     return (
       <div className="bg">
         <NavBar />
-        <Container>
-          <video autoPlay loop muted playsInline src="/images/portfolio/main/IMG_3992.mp4" type="video/mp4" />
-        </Container>
         <Container style={{ padding: '10px' }}>
           <div className="grid-container" style={{
             display: 'grid',

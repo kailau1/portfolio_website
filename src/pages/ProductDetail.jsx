@@ -1,17 +1,13 @@
 import React from 'react';
 import NavBar from '../components/NavBarMain';
 import ProductImageGallery from '../components/ProductImageGallery';
-import { Grid, Container, Typography, Box, Button } from "@mui/material"; // Import Box
-import { Link } from 'react-router-dom';
+import { Grid, Container, Typography, Box, Button } from "@mui/material";
 
 import '../assets/css/ProductDetail.css';
 
 const ProductDetail = () => {
     return(
         <div className="bg">
-            <video autoPlay loop muted playsInline >
-                <source src="/images/main_background.mp4" type="video/mp4" />
-            </video>
             <NavBar />
             <Container className='container'>
                 <Grid container spacing={2}>

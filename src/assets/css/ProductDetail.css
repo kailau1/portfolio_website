@@ -13,3 +13,19 @@
 .text {
   font-family: 'Approach_Mono';
 }
+
+.bg {
+  background-image: url('../../../public/images/main_background.gif');
+
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  min-height: 100vh;
+
+  background-color: #000;
+}

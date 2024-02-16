@@ -9,9 +9,6 @@ import '../assets/css/Shop.css';
 const Shop = () => {
     return(
         <div className="bg">
-            <video autoPlay loop muted playsInline >
-                <source src="/images/main_background.mp4" type="video/mp4" />
-            </video>
             <NavBar />
             <Container className = "productContainer" style={{
                 display: 'flex',

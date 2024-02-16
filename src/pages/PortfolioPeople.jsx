@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBarPortfolio';
-import { Container, Toolbar, Button } from "@mui/material";
+import { Container} from "@mui/material";
 
 const itemData = [
     { img: '/images/portfolio/onwe_photowalk/1.JPG', title: '1.' },
@@ -22,7 +22,7 @@ const itemData = [
     { img: '/images/portfolio/onwe_photowalk/17.JPG', title: '17' },
     { img: '/images/portfolio/onwe_photowalk/18.JPG', title: '18' },
     { img: '/images/portfolio/onwe_photowalk/19.JPG', title: '19' },
-    { img: '/images/portfolio/onwe_photowalk/20.JPG', title: '20' },
+    { img: '/images/portfolio/onwe_photowalk/20.jpg', title: '20' },
     { img: '/images/portfolio/onwe_photowalk/21.JPG', title: '21' },
     { img: '/images/portfolio/onwe_photowalk/22.JPG', title: '22' },
     { img: '/images/portfolio/onwe_photowalk/23.JPG', title: '23' },
@@ -46,11 +46,8 @@ const itemData = [
 
 const Portfolio = () => {
     return (
-        <div className="bg" playsInline >
+        <div className="bg">
           <NavBar />
-          <Container>
-            <video autoPlay loop muted playsInline src="/images/portfolio/main/IMG_3992.mp4" type="video/mp4" />
-          </Container>
           <Container style={{ padding: '10px' }}>
             <div className="grid-container" style={{
               display: 'grid',

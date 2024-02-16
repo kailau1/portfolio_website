@@ -12,11 +12,20 @@
 }
 
 .bg {
-    position: relative;
-    width: 100%;
-    min-height: 100vh; 
-    overflow: hidden; 
-}
+    background-image: url('../../../public/images/main_background.gif');
+  
+    background-size: cover;
+  
+    background-attachment: fixed;
+  
+    background-repeat: no-repeat;
+  
+    background-position: center;
+  
+    min-height: 100vh;
+  
+    background-color: #000;
+  }
 
 html, body {
     height: 100%;
@@ -45,27 +54,26 @@ html, body {
     text-align: center; 
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and smaller devices */
+@media (max-width: 768px) { 
     .product1 {
-        width: 100%; /* Adjust the size of the image */
-        margin: 0 auto; /* Center the image */
+        width: 100%;
+        margin: 0 auto;
     }
 
     .productText {
-        font-size: 0.8rem; /* Adjust text size */
+        font-size: 0.8rem; 
     }
 
 }
 
-@media (max-width: 480px) { /* Mobile devices */
+@media (max-width: 480px) { 
     .product1 {
-        width: 90%; /* Adjust the size of the image for mobile screens */
+        width: 90%; 
     }
 
     .productText {
-        font-size: 0.7rem; /* Further reduce text size for mobile */
+        font-size: 0.7rem; 
     }
 
-    /* Additional mobile-specific adjustments can be added here */
+    
 }
