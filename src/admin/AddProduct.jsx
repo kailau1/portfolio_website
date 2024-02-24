@@ -1,37 +1,27 @@
 import React, { useState } from 'react';
 import AdminNavBar from '../components/AdminNavBar';
-import { Container, Typography, TextField, Button } from "@mui/material";
+import { Container, TextField, Button } from "@mui/material";
+import axios from 'axios';
 
-function AddProduct  () {
+const AddProduct = () => {
     const [productName, setProductName] = useState('');
     const [productDescription, setProductDescription] = useState('');
     const [productPrice, setProductPrice] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-    
-        try {
-            const response = await fetch('/api/products', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: productName,
-                    description: productDescription,
-                    price: productPrice,
-                }),
-            });
-    
-            if (response.ok) {
-                console.log('Product was successfully added to the db.');
-            } else {
-                console.error('Error adding product');
-            } 
-        } catch (error) {
-            console.error('error adding product');
-        }
+    const productData = {
+      name: productName,
+      description: productDescription,
+      price: productPrice,
     };
+
+    const handleSubmit = () => {
+      axios.post("http://localhost:5000/api/product", productData)
+        .then(response => {
+          console.log(response.date);
+        })
+        .catch(error => {
+          console.eroor(error);
+        })};
     
     return (
         <div className="bg">
@@ -40,7 +30,7 @@ function AddProduct  () {
           </video>
           <AdminNavBar />
           <Container>
-            <form onSubmit={handleSubmit}> {/* Add onSubmit event to form */}
+            <form onSubmit={handleSubmit}> 
               <TextField 
                 label="Name" 
                 color="secondary" 
@@ -76,7 +66,7 @@ function AddProduct  () {
               }}>
                 Add Product
               </Button>
-            </form> {/* Close the form */}
+            </form>
           </Container>
         </div>
       );
